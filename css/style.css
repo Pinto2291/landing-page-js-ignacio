@@ -1,0 +1,97 @@
+@import url('./buttons.css');
+@import url('./footer.css');
+
+:root {
+  --bg-light: #FFF;
+  --bg-dark: #000;
+  --font-white: #FFF;
+  --font-helvetica: Helvetica;
+  --font-family-primary: "Roobert","Poppins","Helvetica",sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  transition: all 200ms ease-in-out 100ms;
+  font-family: var(--font-family-primary);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Utilities */
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.contenedor {
+  width: 1200px;
+}
+
+/* Themes */
+
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+/* Text utilities */
+
+.text-triangle {
+  font-size: 2.5rem;
+}
+
+.title-h2 {
+  font-size: 2rem;
+}
+
+
+
+/* Navegacion */
+
+.navegacion {
+  background-color: var(--bg-dark);
+  display: flex;
+  justify-content: center;
+}
+
+.navegacion-flex {
+  display: flex;
+  color: var(--font-white);
+  justify-content: space-around;
+  padding: 2rem;
+  align-items: center;
+}
+
+.navegacion-titulos {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
