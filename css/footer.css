@@ -2,11 +2,14 @@
     height: auto;
     background-color: var(--bg-dark);
     color: var(--font-white);
+    padding: 2.5rem;
+    margin-top: 2rem;
+}
+
+.footer-principal {
     display: grid;
     grid-template-rows: 25%, 50%, 25%;
     gap: 3rem;
-    padding: 2.5rem;
-    margin-top: 2rem;
     align-items: center;
     justify-items: center;
 }
