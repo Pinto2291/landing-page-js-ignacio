@@ -69,10 +69,8 @@ li {
 }
 
 .title-h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-
-
 
 /* Navegacion */
 
@@ -85,13 +83,19 @@ li {
 .navegacion-flex {
   display: flex;
   color: var(--font-white);
-  justify-content: space-around;
-  padding: 2rem;
+  justify-content: space-between;
+  padding: 3rem 0;
   align-items: center;
 }
 
 .navegacion-titulos {
   display: flex;
-  gap: 2rem;
-  font-size: 1.5rem;
+  gap: 5rem;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navegacion-titulos > li {
+  cursor: pointer;
 }
