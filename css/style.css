@@ -51,7 +51,6 @@ li {
 .contenedor {
   width: 1200px;
 }
-
 /* Themes */
 
 .bg-light {
@@ -98,4 +97,13 @@ li {
 
 .navegacion-titulos > li {
   cursor: pointer;
+}
+
+.opciones {
+  display: flex;
+  color: var(--font-white);
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 2rem;
 }

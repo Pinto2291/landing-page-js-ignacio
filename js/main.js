@@ -15,6 +15,14 @@ theme_button.addEventListener('click', () => {
     }
 });
 
+
+
+$('#navegacion-inicio').on('click', () => {
+    $('.sub-navegacion').fadeIn();;
+})
+    
+
+/*
 const pascalTriangle = (numRows) => {
     let triangle = [[1], [1, 1]];
 
@@ -85,3 +93,5 @@ function generatePascalTriangle(n) {
 }
 
 generatePascalTriangle(6);
+
+*/
