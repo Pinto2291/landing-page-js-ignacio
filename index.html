@@ -8,42 +8,110 @@
 </head>
 <body>
 
-  
-
     <nav class="navegacion">
 
       <div class="contenedor navegacion-flex">
 
-        <h2 class="title-h2 uppercase">Ignition</h2>
+        <h2 id="title-ignition" class="title-h2 uppercase pointer font-white">Ignition</h2>
 
-        <ul class="navegacion-titulos">
-          <li id="navegacion-inicio">Inicio</li>
-          <li>Acerca</li>
-          <li>Tecnologias</li>
-          <li>Herramientas</li>
-          <li>contacto</li>
+          <div id="navegacion-menu" class="navegacion-menu pointer">
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+            <div class="navegacion-linea"></div>
+          </div>      
+
+      <div class="navegacion-titulos-padre">
+        <ul id="navegacion-titulos" class="navegacion-titulos">
+          <li class="elemento-navegacion">Inicio</li>
+          <li class="elemento-navegacion">Acerca</li>
+          <li class="elemento-navegacion">Tecnologias</li>
+          <li class="elemento-navegacion">Herramientas</li>
+          <li class="elemento-navegacion">contacto</li>
         </ul>
-
       </div>
+
+    </div>
+
+    <div class="navegacion-titulos-padre-2">
+      <ul class="navegacion-titulos navegacion-titulos-2">
+        <li class="elemento-navegacion"><a href="">Inicio</a></li>
+        <li class="elemento-navegacion"><a href="">Acerca</a></li>
+        <li class="elemento-navegacion"><a href="#tecnologia-titulo">Tecnologias</a></li>
+        <li class="elemento-navegacion"><a href="">Herramientas</a></li>
+        <li class="elemento-navegacion"><a href="">contacto</a></li>
+      </ul>
+    </div>
 
     </nav>
 
+    <header class="header">
 
-    <div class="bg-dark sub-navegacion">
       <div class="contenedor">
-        <ul class="opciones">
-          <li>Opcion 1</li>
-          <li>Opcion 2</li>
-          <li>Opcion 3</li>
-        </ul>
-      </div> 
-    </div>
+        <h1 class="title-h1"> <span class="uppercase">Ignacio</span> <br> 
+          Front End Developer</h1>
+        <p class="text-p">Soy un Front End Developer, Ingeniero y Diseñador, que usa las mas recientes tecnologias, <br> codigo estable e inteligencia artificial <br> para crear sitios web asombrosos</p>
 
+      </div>
+      
 
+    </header>
 
+    <section class="acerca-section">
+      <h3 id="acerca-titulo" class="title-h3">Acerca</h3>
+      <p class="text-p">Como Ingeniero Civil y Desarrollador Web, tengo conocimientos en JavaScript, HTML, CSS, React, Node y bases de datos. Soy capaz de crear sitios web dinámicos y adaptativos a múltiples pantallas. HTML es el lenguaje de marcado que utilizo para estructurar el contenido de una página web, CSS para dar estilo y diseño, y JavaScript para añadir interactividad y dinamismo. React y Node son herramientas que utilizo para crear aplicaciones web más complejas y escalables. Además, tengo experiencia en el desarrollo de aplicaciones móviles y en la sincronización de datos.</p>
+    </section>
+
+    <section class="main-section">
+
+      <h3 id="tecnologia-titulo" class="title-h3">Tecnologias</h3>
+
+      <div class="contenedor main-section-options">
+
+        <div class="sub-section">
+          <p class="title-p">HTML</p>
+          <p class="text-p">HTML (Hyper Text Markup Language) es un lenguaje de marcado de etiquetas que se utiliza para crear y estructurar contenido en la web. Este lenguaje permite definir la estructura y el contenido de una página web mediante el uso de etiquetas que indican al navegador cómo mostrar el contenido de la página.</p>
+        </div>
+
+        <div class="sub-section">
+          <p class="title-p">CSS</p>
+          <p class="text-p">CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para definir la presentación de un documento HTML. CSS permite separar el contenido de un documento HTML de su presentación, lo que facilita la creación de diseños y estilos coherentes en toda una página web.</p>
+        </div>
+
+        <div class="sub-section">
+          <p class="title-p">JavaScript</p>
+          <p class="text-p">JavaScript es un lenguaje de programación interpretado que se utiliza principalmente para crear interactividad dinámica en los sitios web. Es un lenguaje de alto nivel, dinámico e interpretado que se define como orientado a objetos, basado en prototipos, imperativo y débilmente tipado.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="second-section">
+
+      <h3 id="herramientas-titulo" class="title-h3">Herramientas</h3>
+
+      <p class="title-p text-center">VS Code</p>
+
+      <p class="text-p">Visual Studio Code (VS Code) es un editor de código fuente gratuito y de código abierto desarrollado por Microsoft. VS Code es altamente personalizable y cuenta con una amplia variedad de extensiones y herramientas para desarrolladores. Es compatible con múltiples lenguajes de programación, incluyendo JavaScript, Python, C#, HTML y CSS.</p>
+
+      <p class="title-p text-center">Figma</p>
+
+      <p class="text-p">Figma es una herramienta de diseño de interfaces de usuario que se utiliza para crear y diseñar prototipos de aplicaciones y sitios web. Figma es una aplicación basada en la nube que permite a los usuarios trabajar en equipo y colaborar en tiempo real.</p>
+
+    </section>
+
+    <section class="third-section">
+      <h3 id="contacto-titulo" class="title-h3">Contacto</h3>
+
+    </section>
   
 
-  <button class="btn" id="theme-button">light</button>
 
   <footer class="footer">
 
@@ -54,7 +122,7 @@
       <div class="footer-opciones">
   
         <ul class="footer-navegacion">
-          <h3 class="title-h3">Diseño</h3>
+          <h3 class="title-h3 pointer">Diseño</h3>
           <li>Diseño web</li>
           <li>Diseño movil</li>
           <li>Diseño UX / UI</li>
@@ -62,26 +130,26 @@
         </ul>
   
         <ul class="footer-navegacion">
-          <h3 class="title-h3">Contacto</h3>
+          <h3 class="title-h3 pointer">Contacto</h3>
           <li>Precios</li>
           <li>Compatibilidad</li>
         </ul>
   
         <ul class="footer-navegacion">
-          <h3 class="title-h3">Soporte</h3>
+          <h3 class="title-h3 pointer">Soporte</h3>
           <li>Centro de ayuda</li>
           <li>Comunidad</li>
         </ul>
   
         <ul class="footer-navegacion">
-          <h3 class="title-h3">Compañia</h3>
+          <h3 class="title-h3 pointer">Compañia</h3>
           <li>Acerca</li>
           <li>Blog</li>
           <li>Historia</li>
         </ul>
   
-        <ul class="footer-navegacion">
-          <h3 class="title-h3">Social</h3>
+        <ul class="footer-navegacion footer-navegacion-final">
+          <h3 class="title-h3 pointer">Social</h3>
           <li>Twitter</li>
           <li>GitHub</li>
           <li>Linkedin</li>
@@ -100,7 +168,11 @@
 
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-  <script type="module" src="./js/main.js"></script>
+  <!-- Jquery link -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+  <script src="./js/main.js"></script>
+
 </body>
 </html>

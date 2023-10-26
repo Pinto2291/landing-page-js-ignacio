@@ -22,6 +22,7 @@ body {
   transition: all 200ms ease-in-out 100ms;
   font-family: var(--font-family-primary);
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,10 +39,22 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
 /* Utilities */
 
 .text-center {
   text-align: center;
+}
+
+.font-white {
+  color: var(--font-white);
 }
 
 .uppercase {
@@ -49,8 +62,30 @@ li {
 }
 
 .contenedor {
-  width: 1200px;
+  max-width: 1200px;
+  margin: auto;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.fixed-position {
+  position: fixed;
+}
+
+.hide {
+  display: none;
+}
+
+.border-radius-10 {
+  border-radius: 1rem;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
 /* Themes */
 
 .bg-light {
@@ -69,22 +104,26 @@ li {
 
 .title-h2 {
   font-size: 2.5rem;
+  text-align: center;
+}
+
+.title-h3 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 /* Navegacion */
 
 .navegacion {
   background-color: var(--bg-dark);
-  display: flex;
-  justify-content: center;
+  padding: 1.5rem;
 }
 
 .navegacion-flex {
   display: flex;
-  color: var(--font-white);
-  justify-content: space-between;
-  padding: 3rem 0;
+  gap: 2rem;
   align-items: center;
+  justify-content: space-around;
 }
 
 .navegacion-titulos {
@@ -93,6 +132,8 @@ li {
   font-size: 2.1rem;
   text-transform: uppercase;
   font-weight: bold;
+  color: var(--font-white);
+  text-align: center;
 }
 
 .navegacion-titulos > li {
@@ -106,4 +147,184 @@ li {
   justify-content: center;
   font-size: 1.5rem;
   gap: 2rem;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.text-p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 0.25rem solid black;
+  text-align: center;
+  line-height: 2.5rem;
+  margin: 0 3rem;
+}
+
+/* Main Section */
+
+.main-section-options {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.sub-section {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.navegacion-titulos-padre {
+    display: block;
+}
+
+.title-p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Second Section */
+
+.second-section {
+  margin: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .navegacion-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .navegacion-titulos {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+ 
+  .header {
+    height: 380px;
+  }
+
+  .main-section-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .footer-principal > h2 {
+    text-align: center;
+  }
+
+  .footer-opciones {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .footer-navegacion {
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+
+  .navegacion-flex {
+    display: flex;
+    color: var(--font-white);
+    justify-content: space-between;
+    padding: 3rem 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer-navegacion {
+    font-size: 1.2rem;
+  }
+
+  .footer-opciones {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  .footer-final {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-p {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .navegacion-titulos-padre, .navegacion-titulos-padre-2 {
+    display: none;
+  }
+
+  .navegacion-titulos-2 {
+    gap: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .navegacion-flex > h2 {
+    text-align: center;
+  }
+  
+  .navegacion-menu {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-rows: repeat(3, minmax(auto, 1fr));
+    padding: 0.5rem;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+    transition: all 150ms ease 50ms;
+  }
+
+  .navegacion-linea {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--bg-light);
+    max-width: auto;
+  }
+
+}
+
+@media screen and (min-width: 551px) {
+  .navegacion-titulos-2 {
+    display: none;
+  }
 }
