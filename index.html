@@ -2,177 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ignacio Pinto - Front End Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Yoguris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  
 </head>
 <body>
 
-    <nav class="navegacion">
+  <nav class="navegacion">
 
-      <div class="contenedor navegacion-flex">
+    <div class="navegacion-titulo-logo">
 
-        <h2 id="title-ignition" class="title-h2 uppercase pointer font-white">Ignition</h2>
+      <div class="navegacion-logo">
+        <div class="circulo-logo"></div>
+        <div class="circulo-logo"></div>
+        <div class="circulo-logo"></div>
+        <div class="circulo-logo"></div>
+      </div>
+  
+      <h1 class="title-h1 uppercase">Yoguris</h1>
 
-          <div id="navegacion-menu" class="navegacion-menu pointer">
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-            <div class="navegacion-linea"></div>
-          </div>      
+    </div>
 
-      <div class="navegacion-titulos-padre">
-        <ul id="navegacion-titulos" class="navegacion-titulos">
-          <li class="elemento-navegacion">Inicio</li>
-          <li class="elemento-navegacion">Acerca</li>
-          <li class="elemento-navegacion">Tecnologias</li>
-          <li class="elemento-navegacion">Herramientas</li>
-          <li class="elemento-navegacion">contacto</li>
-        </ul>
+    <ul class="navegacion-lista">
+      <li class="pointer hover-btn">Precios</li>
+      <li class="pointer hover-btn">Producto</li>
+      <li class="pointer hover-btn">Acerca de nosotros</li>
+      <li class="pointer hover-btn">Carreras</li>
+      <li class="pointer hover-btn">Comunidad</li>
+    </ul>
+
+    <p class="navegacion-conexione"><a class="btn-orange" href="#">Comprar</a></p>
+
+  </nav>
+
+  <!-- MAIN --------------------------->
+
+  <main class="main">
+
+    <div class="main-left">
+      <p class="main-p">Los mejores Yogures del mercado nacional.</p>
+
+      <p class="main-descripcion"> Yoguris crea los mejores yogures a partir de materias primas de productores nacionales</p>
+
+      <p class="navegacion-conexion"><a class="btn-orange" href="#">Comprar</a></p>
+    </div>
+
+    <div class="main-right">
+
+      <div class="main-right-1-graph graph">
+        <div class="graph-1">
+          <p class="description-graph">Producto <br> Nacional</p>
+        </div>
       </div>
 
-    </div>
-
-    <div class="navegacion-titulos-padre-2">
-      <ul class="navegacion-titulos navegacion-titulos-2">
-        <li class="elemento-navegacion"><a href="">Inicio</a></li>
-        <li class="elemento-navegacion"><a href="">Acerca</a></li>
-        <li class="elemento-navegacion"><a href="#tecnologia-titulo">Tecnologias</a></li>
-        <li class="elemento-navegacion"><a href="">Herramientas</a></li>
-        <li class="elemento-navegacion"><a href="">contacto</a></li>
-      </ul>
-    </div>
-
-    </nav>
-
-    <header class="header">
-
-      <div class="contenedor">
-        <h1 class="title-h1"> <span class="uppercase">Ignacio</span> <br> 
-          Front End Developer</h1>
-        <p class="text-p">Soy un Front End Developer, Ingeniero y Diseñador, que usa las mas recientes tecnologias, <br> codigo estable e inteligencia artificial <br> para crear sitios web asombrosos</p>
-
+      <div class="main-right-2-graph graph">
+        
       </div>
       
-
-    </header>
-
-    <section class="acerca-section">
-      <h3 id="acerca-titulo" class="title-h3">Acerca</h3>
-      <p class="text-p">Como Ingeniero Civil y Desarrollador Web, tengo conocimientos en JavaScript, HTML, CSS, React, Node y bases de datos. Soy capaz de crear sitios web dinámicos y adaptativos a múltiples pantallas. HTML es el lenguaje de marcado que utilizo para estructurar el contenido de una página web, CSS para dar estilo y diseño, y JavaScript para añadir interactividad y dinamismo. React y Node son herramientas que utilizo para crear aplicaciones web más complejas y escalables. Además, tengo experiencia en el desarrollo de aplicaciones móviles y en la sincronización de datos.</p>
-    </section>
-
-    <section class="main-section">
-
-      <h3 id="tecnologia-titulo" class="title-h3">Tecnologias</h3>
-
-      <div class="contenedor main-section-options">
-
-        <div class="sub-section">
-          <p class="title-p">HTML</p>
-          <p class="text-p">HTML (Hyper Text Markup Language) es un lenguaje de marcado de etiquetas que se utiliza para crear y estructurar contenido en la web. Este lenguaje permite definir la estructura y el contenido de una página web mediante el uso de etiquetas que indican al navegador cómo mostrar el contenido de la página.</p>
+      <div class="main-right-3-graph graph">
+        <div class="graph-1">
+          <p class="description-graph">100% <br> Organico</p>
         </div>
-
-        <div class="sub-section">
-          <p class="title-p">CSS</p>
-          <p class="text-p">CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para definir la presentación de un documento HTML. CSS permite separar el contenido de un documento HTML de su presentación, lo que facilita la creación de diseños y estilos coherentes en toda una página web.</p>
-        </div>
-
-        <div class="sub-section">
-          <p class="title-p">JavaScript</p>
-          <p class="text-p">JavaScript es un lenguaje de programación interpretado que se utiliza principalmente para crear interactividad dinámica en los sitios web. Es un lenguaje de alto nivel, dinámico e interpretado que se define como orientado a objetos, basado en prototipos, imperativo y débilmente tipado.</p>
-        </div>
-
       </div>
 
-    </section>
+      <div class="main-right-4-graph graph">
+        <div class="sub-grid-1"><p class="p-porcentaje">85.50%</p></div>
+        <div class="sub-grid-2"><p class="p-plus">+ 1.5%</p></div>
+        <div class="sub-grid-3"><p class="p-porcentaje-small">80%</p></div>
+      </div>
 
-    <section class="second-section">
 
-      <h3 id="herramientas-titulo" class="title-h3">Herramientas</h3>
+    </div>
+    
 
-      <p class="title-p text-center">VS Code</p>
+  </main>
 
-      <p class="text-p">Visual Studio Code (VS Code) es un editor de código fuente gratuito y de código abierto desarrollado por Microsoft. VS Code es altamente personalizable y cuenta con una amplia variedad de extensiones y herramientas para desarrolladores. Es compatible con múltiples lenguajes de programación, incluyendo JavaScript, Python, C#, HTML y CSS.</p>
+  <!--- END MAIN  ------------------------------->
 
-      <p class="title-p text-center">Figma</p>
+  <section class="second-part container">
 
-      <p class="text-p">Figma es una herramienta de diseño de interfaces de usuario que se utiliza para crear y diseñar prototipos de aplicaciones y sitios web. Figma es una aplicación basada en la nube que permite a los usuarios trabajar en equipo y colaborar en tiempo real.</p>
+    <div class="second-part-1">
 
-    </section>
+      <p class="second-p">¿Que nos hace diferentes?</p>
 
-    <section class="third-section">
-      <h3 id="contacto-titulo" class="title-h3">Contacto</h3>
+      <p class="second-description">Nuestos productos son completamente organicos y hechos con leche 100% nacional, las vacas usadas para el producto son tratadas y cuidadas siguiendo las mejores condiciones</p>
 
-    </section>
-  
+    </div>
 
+    <div class="second-part-2">
+
+        <div class="section-title">
+          <p class="number-title">01</p>
+          <h3 class="title-h3">Producto nacional</h3>
+        </div>
+        
+        <p class="description-text">El producto es elaborado en territorio nacional y con productos nacionales siguiendo estandares internacionales de calidad</p>
+
+        <div class="section-title">
+          <p class="number-title">02</p>
+          <h3 class="title-h3">Yogurt Organico</h3>
+        </div>
+
+        <p class="description-text">Nuestro producto es completamente organico no contiene conservantes dañinos y el proceso de produccion respeta el medio ambiente</p>
+
+        <div class="section-title">
+          <p class="number-title">03</p>
+          <h3 class="title-h3">Sabores variados</h3>
+        </div>
+
+        <p class="description-text">Ademas del sabor tradicional, tenemos combinaciones que usan frutas tipicas de la region, como fresa, durazno, mango y ciruela</p>
+      
+    </div>
+
+  </section>
+
+  <section class="third-part">
+
+    <p class="second-p">Nuestro equipo</p>
+
+    <div class="third-part-2">
+
+      <div class="sub-part">
+        <img src="./img/avatar-ali.png" alt="adriana">
+        <p class="nombre-equipo">Adriana</p>
+        <p class="text-equipo">Adriana es la ingenieria de alimentos encargada de diseñar el proceso de producion de nuestros yogures, con mas de 10 años de experiencia a sido la lider de la empresa en el area de produccion</p>
+      </div>
+
+      <div class="sub-part">
+        <img src="./img/avatar-anisha.png" alt="erika">
+        <p class="nombre-equipo">Erika</p>
+        <p class="text-equipo">Erika es nuestre gerente y lider de marketing, a estado detras de todas nuestras campañas de marketing para hacer conocer nuestro producto en todo el territorio nacional</p>
+      </div>
+
+      <div class="sub-part">
+        <img src="./img/avatar-richard.png" alt="miguel">
+        <p class="nombre-equipo">Miguel</p>
+        <p class="text-equipo">Miguel es nuestro cordinador de despacho, encargado de contactar con los clientes y despachar el producto en todo el territorio nacional, es ademas nuestro principal vendedor y el enlace con nuestros socios comerciales</p>
+      </div>
+
+    </div>
+
+    <p class="navegacion-conexion"><a class="btn-orange" href="#">Comprar</a></p>
+
+  </section>
+
+  <section class="four-section">
+    <p class="four-title">Los mejores yogurts del mercado, <br> completamente organicos.</p>
+
+    <p class="navegacion-conexion"><a class="btn-white" href="#">Comprar</a></p>
+  </section>
 
   <footer class="footer">
 
-    <div class="contenedor footer-principal">
+    <div class="container main-footer">
 
-      <h2 class="title-h2 uppercase">Ignition</h2>
+      <div class="footer-1">
 
-      <div class="footer-opciones">
+        <div class="footer-logo">
+
+          <div class="navegacion-logo">
+            <div class="circulo-logo"></div>
+            <div class="circulo-logo"></div>
+            <div class="circulo-logo"></div>
+            <div class="circulo-logo"></div>
+          </div>
+    
+          <p class="title-footer uppercase">Yoguris</p>
   
-        <ul class="footer-navegacion">
-          <h3 class="title-h3 pointer">Diseño</h3>
-          <li>Diseño web</li>
-          <li>Diseño movil</li>
-          <li>Diseño UX / UI</li>
-          <li>Adaptabilidad</li>
-        </ul>
+        </div>
   
-        <ul class="footer-navegacion">
-          <h3 class="title-h3 pointer">Contacto</h3>
-          <li>Precios</li>
-          <li>Compatibilidad</li>
-        </ul>
-  
-        <ul class="footer-navegacion">
-          <h3 class="title-h3 pointer">Soporte</h3>
-          <li>Centro de ayuda</li>
-          <li>Comunidad</li>
-        </ul>
-  
-        <ul class="footer-navegacion">
-          <h3 class="title-h3 pointer">Compañia</h3>
-          <li>Acerca</li>
-          <li>Blog</li>
-          <li>Historia</li>
-        </ul>
-  
-        <ul class="footer-navegacion footer-navegacion-final">
-          <h3 class="title-h3 pointer">Social</h3>
-          <li>Twitter</li>
-          <li>GitHub</li>
-          <li>Linkedin</li>
-        </ul>
-  
+        <div>
+
+          <ul class="footer-navegacion">
+            <li class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#FFF" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/></svg></li>
+            <li class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><path fill="#FFF" d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"/></svg></li>
+            <li class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"><path fill="#FFF" d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"/></svg></li>
+            <li class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#FFF" d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"/></svg></li>
+            <li class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><path fill="#FFF" d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"/></svg></li>
+          </ul>
+        </div>
+
+
       </div>
-  
-      <div class="footer-final">
-        <p class="footer-p uppercase">2023 Ignition</p>
-        <p class="footer-p">Terminos y Condiciones</p>
+
+      <ul class="footer-links">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Precios</a></li>
+        <li><a href="">Productos</a></li>
+        <li><a href="">Acerca de nosotros</a></li>
+      </ul>
+
+      <ul class="footer-links footer-link-2">
+        <li><a href="">Carreras</a></li>
+        <li><a href="">Comunidad</a></li>
+        <li><a href="">Politica de privacidad</a></li>
+      </ul>
+
+      <div class="footer-update">
+        <input class="footer-email" placeholder="tu email" type="email">
+        <button class="btn-white-footer pointer">Ir</button>
       </div>
 
     </div>
 
-   
+    <p class="footer-final">Copyright 2023. Todos los derechos reservados. Creado por Ignacio Pinto</p>
 
   </footer>
 
-  <!-- Jquery link -->
-
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
   <script src="./js/main.js"></script>
-
+  
 </body>
 </html>
