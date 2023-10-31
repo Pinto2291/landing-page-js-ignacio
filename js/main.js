@@ -1,17 +1,14 @@
-/* Theme button */
-const navegation_elements = document.querySelectorAll('.elemento-navegacion');
-const title = document.getElementById('title-ignition');
-const menu = document.querySelector('.navegacion-titulos-padre-2');
-$('#navegacion-menu').on('click', () => {
-    //$('.navegacion-titulos-padre-2').slideToggle('slow');
-    if(menu.style)
-    menu.style.display = 'block';
-    $('.navegacion-linea').toggleClass('border-radius-10');
-    $('#navegacion-menu').toggleClass('rotate-45');
-    
+/* Menu button */
+const menu_mobile_button = document.getElementById('menu-mobile');
+const menu_mobile = document.getElementById('navegacion-mobile');
+const btn_cerrar = document.getElementById('btn-cerrar');
+
+menu_mobile_button.addEventListener('click', () => {
+    menu_mobile_button.style.display = 'none';
+    menu_mobile.style.display = 'flex';
 })
 
-
-$('.title-h3').on('click', () => {
-    $(event.target).siblings().toggle('slow');
+btn_cerrar.addEventListener('click', () => {
+    menu_mobile.style.display = 'none';
+    menu_mobile_button.style.display = 'flex';
 });
